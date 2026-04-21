@@ -23,3 +23,24 @@ print("second max: ",smax)
 print("third max: ",tmax)
 
 
+
+# Q: Check the number is palindrome or not ?
+
+
+number=1001
+t=number
+
+reverse = 0
+
+while number >0:
+    digit = number%10
+    reverse =  reverse*10 +digit
+    number =  number//10
+    
+
+
+if(reverse == t):
+    print("Number is palindrome")
+else:
+    print("Number is not palindrome")
+
