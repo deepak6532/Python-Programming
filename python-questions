@@ -97,4 +97,26 @@ else:
     
 
 
+# Q. Check the number is armstrong or not ?
+
+num = int(input("Enter Number: "))
+
+temp =  num
+
+result  = 0
+power =  len(str(num))
+
+while num >0:
+    r =  num%10
+    result = result + r**power
+    num = num//10
+    
+
+print(result)
+
+if(result == temp):  
+    print("Armstrong")            #153,1634
+else:
+    print("Not armstrong")
+
 
