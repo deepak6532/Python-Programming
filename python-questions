@@ -120,3 +120,39 @@ else:
     print("Not armstrong")
 
 
+
+Q. Check the number is prime or not  ?
+
+num  =  int(input("Enter Number: "))
+
+
+if(num <=1):
+    print("Not prime")
+    
+for i in range(2,num):
+    if num%i == 0:
+        print(f"{num} is not a prime number")
+        break
+else:
+    print(f"{num} is prime number")
+
+
+Q. Find the prime number is specific range like(1-100)
+
+num1 = int(input("Enter the starting number:"))
+num2= int(input("Enter the last number: "))
+
+for i in range(num1,num2+1):
+    is_prime = True
+    for j in range(2,i):
+        if i%j == 0:
+            is_prime = False
+            break
+            
+    if is_prime:
+        print(i,end=" ")
+
+
+# Enter the starting number:0
+# Enter the last number: 100
+# 0 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
